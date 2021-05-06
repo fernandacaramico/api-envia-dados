@@ -10,7 +10,7 @@ var apiSensores = require('./routes/api-sensores');
 
 var app = express();
 
-app.use(logger('dev')); // coloque aqui também, o mesmo valor da linha 1
+app.use(logger('dev')); 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
