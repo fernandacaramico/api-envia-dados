@@ -5,7 +5,7 @@
 /* para sql server - remoto - produção */
 
 CREATE TABLE leitura (
-	id INT IDENTITY,
+	id INT PRIMARY KEY IDENTITY,
 	temperatura DECIMAL,
 	umidade DECIMAL,
 	momento DATETIME,
@@ -13,7 +13,7 @@ CREATE TABLE leitura (
 );
 
 CREATE TABLE usuario (
-	id INT IDENTITY,
+	id INT PRIMARY KEY IDENTITY,
 	nome VARCHAR(50),
 	login VARCHAR(50),
 	senha VARCHAR(50)
